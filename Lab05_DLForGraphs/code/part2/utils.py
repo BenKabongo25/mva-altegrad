@@ -10,14 +10,16 @@ import numpy as np
 import torch
 from sklearn.preprocessing import LabelEncoder
 
-BASE_PATH = "Labs/Lab_05_DLForGraphs/code/"
+BASE_PATH = "Labs/Lab05_DLForGraphs/code/"
+#BASE_PATH = '../'
 
 def normalize_adjacency(A):
     ############## Task 9
-    D = np.diag(np.sum(A, axis=1))
+    A_identity = A + np.identity(A.shape[0])
+    D = np.diag(np.sum(A_identity, axis=1))
     D_inv_sqrt = np.linalg.inv(np.sqrt(D))
     I = np.identity(A.shape[0])
-    A_normalized = np.dot(np.dot(D_inv_sqrt, A + I), D_inv_sqrt)
+    A_normalized = np.dot(np.dot(D_inv_sqrt, A_identity), D_inv_sqrt)
     return sp.csr_matrix(A_normalized)
     
 

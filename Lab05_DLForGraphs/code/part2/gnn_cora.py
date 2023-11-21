@@ -118,7 +118,7 @@ print("Total time elapsed: {:.4f}s".format(time.time() - t_total))
 print()
 
 # Testing
-embeddings_test = test() # ac = 0.8672
+embeddings_test = test() # ac =  0.8690
 
 
 ############## Task 13

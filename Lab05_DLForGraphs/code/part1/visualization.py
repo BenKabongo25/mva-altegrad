@@ -13,7 +13,8 @@ from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 
 # Loads the web graph
-BASE_PATH = "Labs/Lab_05_DLForGraphs/code/"
+BASE_PATH = "Labs/Lab05_DLForGraphs/code/"
+#BASE_PATH = ".."
 G = nx.read_weighted_edgelist(BASE_PATH + 'data/web_sample.edgelist', delimiter=' ', create_using=nx.Graph())
 print("Number of nodes:", G.number_of_nodes())
 print("Number of edges:", G.number_of_edges())

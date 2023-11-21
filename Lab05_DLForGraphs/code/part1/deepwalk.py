@@ -49,7 +49,7 @@ def deepwalk(G, num_walks, walk_length, n_dim):
 
 
 if __name__ == "__main__":
-    BASE_PATH = "Labs/Lab_05_DLForGraphs/code/"
+    BASE_PATH = "Labs/Lab05_DLForGraphs/code/"
     G = nx.read_weighted_edgelist(BASE_PATH + 'data/karate.edgelist', delimiter=' ', nodetype=int, create_using=nx.Graph())
     NUM_WALKS = 1
     WALK_LENGTH = 8

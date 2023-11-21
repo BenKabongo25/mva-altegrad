@@ -23,14 +23,19 @@ for name_G, G in zip(["Cycle graph", "Star graph"], [C4, S4]):
     print(name_G)
 
     A = nx.to_numpy_array(G)
-    D = np.diag(np.sum(A, axis=1))
+    A_identity = A + np.identity(A.shape[0])
+    D = np.diag(np.sum(A_identity, axis=1))
     D_inv_sqrt = np.linalg.inv(np.sqrt(D))
     I = np.identity(A.shape[0])
-    A_normalized = np.dot(np.dot(D_inv_sqrt, A + I), D_inv_sqrt)
+    A_normalized = np.dot(np.dot(D_inv_sqrt, A_identity), D_inv_sqrt)
     
     print()
     print("A")
     print(A)
+
+    print()
+    print("A_identity")
+    print(A_identity)
 
     print()
     print("Degree matrix")

@@ -18,7 +18,8 @@ from deepwalk import deepwalk
 
 
 # Loads the karate network
-BASE_PATH = "Labs/Lab_05_DLForGraphs/code/"
+BASE_PATH = "Labs/Lab05_DLForGraphs/code/"
+#BASE_PATH = '../'
 G = nx.read_weighted_edgelist(BASE_PATH + 'data/karate.edgelist', delimiter=' ', nodetype=int, create_using=nx.Graph())
 print("Number of nodes:", G.number_of_nodes())
 print("Number of edges:", G.number_of_edges())
