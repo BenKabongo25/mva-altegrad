@@ -69,6 +69,13 @@ task8()
 ############## Task 9
 G1, G2 = nx.union(nx.cycle_graph(3), nx.cycle_graph(3), rename=('L-', 'R-')), nx.cycle_graph(6)
 
+### Question 4 check
+#G1, G2 = nx.Graph(), nx.Graph()
+#G1.add_edges_from([ (0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3),
+#                    (4, 5), (4, 6), (4, 7), (5, 6), (5, 7), (6, 7) ])
+#G2.add_edges_from([ (0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 4),
+#                    (3, 5), (4, 6), (4, 7), (5, 6), (5, 7), (6, 7) ])
+
 ############## Task 10
 Gs = [G1, G2]
 adj_batch = list()
