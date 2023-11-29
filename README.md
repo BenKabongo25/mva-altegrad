@@ -10,4 +10,4 @@ The ALTEGRAD course (28 hours) aims at providing an overview of state-of-the-art
 - **Lab 04 :  NLP Frameworks**
 - **Lab 05 : Deep Learning for Graphs (1/2)**
 - **Lab 06 : Deep Learning for Graphs (2/2)**
-- **Lab 07 :**
+- **Lab 07 : Learning on sets and Graphs Generative Models**
